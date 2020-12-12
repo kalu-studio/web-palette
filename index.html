@@ -5,6 +5,75 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: black;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      li {
+        padding-top: 100%;
+        position: relative;
+      }
+
+      li span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        padding: 2px 4px;
+        border-top-right-radius: 2px;
+        font-size: 0.75em;
+        opacity: 0;
+        transition: opacity 0.1s linear;
+      }
+
+      li:hover span,
+      li:focus span {
+        opacity: 1;
+      }
+
+      @media screen and (min-width: 600px) {
+        ul {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        ul {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        ul {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1800px) {
+        ul {
+          grid-template-columns: repeat(8, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 2400px) {
+        ul {
+          grid-template-columns: repeat(10, 1fr);
+        }
+      }
+    </style>
   </head>
   <body>
     <ul>
