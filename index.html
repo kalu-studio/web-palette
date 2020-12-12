@@ -1,17 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Web color palette</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.svg" />
 
-    <link rel="stylesheet" type="text/css" href="static/stylesheets/normalize.css">
-    <link rel="stylesheet" type="text/css" href="static/stylesheets/styles.css">
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: black;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      li {
+        padding-top: 100%;
+        position: relative;
+      }
+
+      li span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        padding: 2px 4px;
+        border-top-right-radius: 2px;
+        font-size: 0.75em;
+        opacity: 0;
+        transition: opacity 0.1s linear;
+      }
+
+      li:hover span,
+      li:focus span {
+        opacity: 1;
+      }
+
+      @media screen and (min-width: 600px) {
+        ul {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        ul {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        ul {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1800px) {
+        ul {
+          grid-template-columns: repeat(8, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 2400px) {
+        ul {
+          grid-template-columns: repeat(10, 1fr);
+        }
+      }
+    </style>
   </head>
-
   <body>
-
+    <ul>
+      <li style="background-color: white"><span>white</span></li>
+      <li style="background-color: whitesmoke"><span>whitesmoke</span></li>
+      <li style="background-color: snow"><span>snow</span></li>
+      <li style="background-color: seashell"><span>seashell</span></li>
+      <li style="background-color: linen"><span>linen</span></li>
+      <li style="background-color: oldlace"><span>oldlace</span></li>
+      <li style="background-color: floralwhite"><span>floralwhite</span></li>
+      <li style="background-color: cornsilk"><span>cornsilk</span></li>
+      <li style="background-color: ivory"><span>ivory</span></li>
+      <li style="background-color: beige"><span>beige</span></li>
+      <li style="background-color: lightyellow"><span>lightyellow</span></li>
+      <li style="background-color: lightgoldenrodyellow"><span>lightgoldenrodyellow</span></li>
+      <li style="background-color: honeydew"><span>honeydew</span></li>
+      <li style="background-color: mintcream"><span>mintcream</span></li>
+      <li style="background-color: azure"><span>azure</span></li>
+      <li style="background-color: lightcyan"><span>lightcyan</span></li>
+      <li style="background-color: aliceblue"><span>aliceblue</span></li>
+      <li style="background-color: ghostwhite"><span>ghostwhite</span></li>
+      <li style="background-color: lavender"><span>lavender</span></li>
+      <li style="background-color: lavenderblush"><span>lavenderblush</span></li>
+      <li style="background-color: gainsboro"><span>gainsboro</span></li>
+      <li style="background-color: lightgray"><span>lightgray</span></li>
+      <li style="background-color: mistyrose"><span>mistyrose</span></li>
+      <li style="background-color: peachpuff"><span>peachpuff</span></li>
+      <li style="background-color: bisque"><span>bisque</span></li>
+      <li style="background-color: antiquewhite"><span>antiquewhite</span></li>
+      <li style="background-color: navajowhite"><span>navajowhite</span></li>
+      <li style="background-color: blanchedalmond"><span>blanchedalmond</span></li>
+      <li style="background-color: papayawhip"><span>papayawhip</span></li>
+      <li style="background-color: moccasin"><span>moccasin</span></li>
+      <li style="background-color: wheat"><span>wheat</span></li>
+      <li style="background-color: lemonchiffon"><span>lemonchiffon</span></li>
+      <li style="background-color: palegoldenrod"><span>palegoldenrod</span></li>
+      <li style="background-color: palegreen"><span>palegreen</span></li>
+      <li style="background-color: aquamarine"><span>aquamarine</span></li>
+      <li style="background-color: paleturquoise"><span>paleturquoise</span></li>
+      <li style="background-color: powderblue"><span>powderblue</span></li>
+      <li style="background-color: lightblue"><span>lightblue</span></li>
+      <li style="background-color: pink"><span>pink</span></li>
+      <li style="background-color: lightpink"><span>lightpink</span></li>
+      <li style="background-color: silver"><span>silver</span></li>
+      <li style="background-color: lightcoral"><span>lightcoral</span></li>
+      <li style="background-color: salmon"><span>salmon</span></li>
+      <li style="background-color: tomato"><span>tomato</span></li>
+      <li style="background-color: darksalmon"><span>darksalmon</span></li>
+      <li style="background-color: coral"><span>coral</span></li>
+      <li style="background-color: lightsalmon"><span>lightsalmon</span></li>
+      <li style="background-color: sandybrown"><span>sandybrown</span></li>
+      <li style="background-color: burlywood"><span>burlywood</span></li>
+      <li style="background-color: tan"><span>tan</span></li>
+      <li style="background-color: khaki"><span>khaki</span></li>
+      <li style="background-color: greenyellow"><span>greenyellow</span></li>
+      <li style="background-color: lightgreen"><span>lightgreen</span></li>
+      <li style="background-color: skyblue"><span>skyblue</span></li>
+      <li style="background-color: lightskyblue"><span>lightskyblue</span></li>
+      <li style="background-color: lightsteelblue"><span>lightsteelblue</span></li>
+      <li style="background-color: thistle"><span>thistle</span></li>
+      <li style="background-color: plum"><span>plum</span></li>
+      <li style="background-color: violet"><span>violet</span></li>
+      <li style="background-color: hotpink"><span>hotpink</span></li>
+      <li style="background-color: darkgray"><span>darkgray</span></li>
+      <li style="background-color: rosybrown"><span>rosybrown</span></li>
+      <li style="background-color: orangered"><span>orangered</span></li>
+      <li style="background-color: darkorange"><span>darkorange</span></li>
+      <li style="background-color: orange"><span>orange</span></li>
+      <li style="background-color: gold"><span>gold</span></li>
+      <li style="background-color: darkkhaki"><span>darkkhaki</span></li>
+      <li style="background-color: yellow"><span>yellow</span></li>
+      <li style="background-color: yellowgreen"><span>yellowgreen</span></li>
+      <li style="background-color: chartreuse"><span>chartreuse</span></li>
+      <li style="background-color: lawngreen"><span>lawngreen</span></li>
+      <li style="background-color: darkseagreen"><span>darkseagreen</span></li>
+      <li style="background-color: mediumaquamarine"><span>mediumaquamarine</span></li>
+      <li style="background-color: turquoise"><span>turquoise</span></li>
+      <li style="background-color: mediumturquoise"><span>mediumturquoise</span></li>
+      <li style="background-color: cornflowerblue"><span>cornflowerblue</span></li>
+      <li style="background-color: mediumslateblue"><span>mediumslateblue</span></li>
+      <li style="background-color: mediumpurple"><span>mediumpurple</span></li>
+      <li style="background-color: orchid"><span>orchid</span></li>
+      <li style="background-color: palevioletred"><span>palevioletred</span></li>
+      <li style="background-color: gray"><span>gray</span></li>
+      <li style="background-color: indianred"><span>indianred</span></li>
+      <li style="background-color: chocolate"><span>chocolate</span></li>
+      <li style="background-color: peru"><span>peru</span></li>
+      <li style="background-color: goldenrod"><span>goldenrod</span></li>
+      <li style="background-color: limegreen"><span>limegreen</span></li>
+      <li style="background-color: lime"><span>lime</span></li>
+      <li style="background-color: mediumseagreen"><span>mediumseagreen</span></li>
+      <li style="background-color: springgreen"><span>springgreen</span></li>
+      <li style="background-color: mediumspringgreen"><span>mediumspringgreen</span></li>
+      <li style="background-color: aqua"><span>aqua/cyan</span></li>
+      <li style="background-color: cadetblue"><span>cadetblue</span></li>
+      <li style="background-color: dodgerblue"><span>dodgerblue</span></li>
+      <li style="background-color: lightslategray"><span>lightslategray</span></li>
+      <li style="background-color: slategray"><span>slategray</span></li>
+      <li style="background-color: royalblue"><span>royalblue</span></li>
+      <li style="background-color: slateblue"><span>slateblue</span></li>
+      <li style="background-color: mediumorchid"><span>mediumorchid</span></li>
+      <li style="background-color: deeppink"><span>deeppink</span></li>
+      <li style="background-color: dimgray"><span>dimgray</span></li>
+      <li style="background-color: red"><span>red</span></li>
+      <li style="background-color: brown"><span>brown</span></li>
+      <li style="background-color: firebrick"><span>firebrick</span></li>
+      <li style="background-color: sienna"><span>sienna</span></li>
+      <li style="background-color: saddlebrown"><span>saddlebrown</span></li>
+      <li style="background-color: darkgoldenrod"><span>darkgoldenrod</span></li>
+      <li style="background-color: olivedrab"><span>olivedrab</span></li>
+      <li style="background-color: seagreen"><span>seagreen</span></li>
+      <li style="background-color: lightseagreen"><span>lightseagreen</span></li>
+      <li style="background-color: darkturquoise"><span>darkturquoise</span></li>
+      <li style="background-color: deepskyblue"><span>deepskyblue</span></li>
+      <li style="background-color: steelblue"><span>steelblue</span></li>
+      <li style="background-color: blue"><span>blue</span></li>
+      <li style="background-color: blueviolet"><span>blueviolet</span></li>
+      <li style="background-color: darkorchid"><span>darkorchid</span></li>
+      <li style="background-color: fuchsia"><span>fuchsia/magenta</span></li>
+      <li style="background-color: mediumvioletred"><span>mediumvioletred</span></li>
+      <li style="background-color: crimson"><span>crimson</span></li>
+      <li style="background-color: maroon"><span>maroon</span></li>
+      <li style="background-color: darkred"><span>darkred</span></li>
+      <li style="background-color: olive"><span>olive</span></li>
+      <li style="background-color: darkolivegreen"><span>darkolivegreen</span></li>
+      <li style="background-color: darkgreen"><span>darkgreen</span></li>
+      <li style="background-color: green"><span>green</span></li>
+      <li style="background-color: forestgreen"><span>forestgreen</span></li>
+      <li style="background-color: darkslategray"><span>darkslategray</span></li>
+      <li style="background-color: teal"><span>teal</span></li>
+      <li style="background-color: darkcyan"><span>darkcyan</span></li>
+      <li style="background-color: midnightblue"><span>midnightblue</span></li>
+      <li style="background-color: navy"><span>navy</span></li>
+      <li style="background-color: darkblue"><span>darkblue</span></li>
+      <li style="background-color: mediumblue"><span>mediumblue</span></li>
+      <li style="background-color: rebeccapurple"><span>rebeccapurple</span></li>
+      <li style="background-color: darkslateblue"><span>darkslateblue</span></li>
+      <li style="background-color: indigo"><span>indigo</span></li>
+      <li style="background-color: darkviolet"><span>darkviolet</span></li>
+      <li style="background-color: purple"><span>purple</span></li>
+      <li style="background-color: darkmagenta"><span>darkmagenta</span></li>
+      <li style="background-color: black"><span>black</span></li>
+    </ul>
   </body>
 </html>
