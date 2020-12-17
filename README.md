@@ -1,4 +1,4 @@
 # web-palette
 Swatch palette of default css colors sorted by lightness and hue
 
-[View](https://kalu-sajith.github.io/web-palette/)
+[View](https://kalu-studio.github.io/web-palette/)
